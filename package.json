@@ -1,7 +1,7 @@
 {
   "name": "webapp",
   "version": "0.1.0",
-  "homepage": "https://flippantkea.github.io/flippantkea.github.io",
+  "homepage": "https://flippantkea.github.io",
   "private": true,
   "dependencies": {
     "@types/jest": "^27.5.2",
