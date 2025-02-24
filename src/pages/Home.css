@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .background-wrapper {
+    background-color: #d1d6cd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .square {
+    background-color: #89216b1c;
+    top: -80px;
+    position: absolute;
+    animation-name: animateSquares;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle {
+    background-color: #89216b1c;
+    top: -80px;
+    position: absolute;
+    animation-name: animateCircles;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    top: -80px;
+    position: absolute;
+    animation-name: animateTriangles;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #89216b1c;
+  }
+  
+  @keyframes animateSquares {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+  
+  @keyframes animateCircles {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateTriangles {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
